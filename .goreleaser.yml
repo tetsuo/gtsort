@@ -14,7 +14,7 @@ builds:
     gcflags:
       - all=-trimpath={{.Env.GOPATH}}
     ldflags: |
-      -s -w -X main.version={{.Version}} -extldflags '-static'
+      -s -w -X main.VERSION={{.Version}} -extldflags '-static'
     mod_timestamp: "{{ .CommitTimestamp }}"
 
 checksum:

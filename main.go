@@ -7,7 +7,8 @@ import (
 )
 
 const PROGRAM_NAME = "tsort-go"
-const VERSION = "development"
+
+var VERSION = "development"
 
 func usage(status int) {
 	if status != 0 {
