@@ -34,3 +34,8 @@ f
 ```
 
 For detailed information on the `tsort` command invocation, see the [GNU Coreutils manual](https://www.gnu.org/software/coreutils/manual/html_node/tsort-invocation.html).
+
+## License
+
+GPL-3.0
+
