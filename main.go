@@ -30,7 +30,7 @@ func main() {
 		case "--help":
 			usage(0)
 		case "--version":
-			fmt.Printf("%s %s\n", PROGRAM_NAME, VERSION)
+			fmt.Printf("%s version %s\n", PROGRAM_NAME, VERSION)
 			os.Exit(0)
 		}
 	}
