@@ -1,4 +1,4 @@
-# gtsort
+# tsort-go
 
 A Go port of the [`tsort`](https://github.com/coreutils/coreutils/blob/cb2abbac7f9e40e0f0d6183bf9b11e80b0cad8ef/src/tsort.c) utility from GNU Coreutils.
 It performs a topological sort using Algorithm T from Knuth's *The Art of Computer Programming*, Volume 1.
@@ -6,7 +6,7 @@ It performs a topological sort using Algorithm T from Knuth's *The Art of Comput
 ## Usage
 
 ```bash
-gtsort [OPTION] [FILE]
+tsort-go [OPTION] [FILE]
 ```
 
 Write totally ordered list consistent with the partial ordering in FILE. With no FILE, or when FILE is `-`, read standard input.
@@ -14,7 +14,7 @@ Write totally ordered list consistent with the partial ordering in FILE. With no
 ## Example
 
 ```
-gtsort <<EOF
+tsort-go <<EOF
 a b c
 d
 e f

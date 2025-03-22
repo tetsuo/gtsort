@@ -6,8 +6,8 @@ import (
 	"os"
 )
 
-const PROGRAM_NAME = "gtsort"
-const VERSION = "1"
+const PROGRAM_NAME = "tsort-go"
+const VERSION = "development"
 
 func usage(status int) {
 	if status != 0 {
@@ -29,7 +29,7 @@ func main() {
 		case "--help":
 			usage(0)
 		case "--version":
-			fmt.Printf("%s version %s\n", PROGRAM_NAME, VERSION)
+			fmt.Printf("%s %s\n", PROGRAM_NAME, VERSION)
 			os.Exit(0)
 		}
 	}

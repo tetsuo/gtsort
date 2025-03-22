@@ -1,0 +1,21 @@
+version: 2
+
+project_name: tsort-go
+
+builds:
+  - id: tsort-go
+    main: ./
+    flags:
+      - -trimpath
+    env:
+      - CGO_ENABLED=0
+    asmflags:
+      - all=-trimpath={{.Env.GOPATH}}
+    gcflags:
+      - all=-trimpath={{.Env.GOPATH}}
+    ldflags: |
+      -s -w -X main.version={{.Version}} -extldflags '-static'
+    mod_timestamp: "{{ .CommitTimestamp }}"
+
+checksum:
+  name_template: "{{.ProjectName}}_{{.Version}}_SHA256SUMS"
